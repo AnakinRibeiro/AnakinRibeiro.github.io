@@ -15,6 +15,17 @@
   </head>
 
   <body>
+    <div id="myNav" class="overlayMaster">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="overlayMaster-content">
+        <a href="#">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#minhas-skills">Skills</a>
+        <a href="#projects">Projetos</a>
+      </div>
+    </div>
     <!-- Header -->
     <nav class="navbar hide-sm" id="menu">
       <div class="container">
@@ -30,8 +41,10 @@
       </div>
     </nav>
 
-    <nav class="navbar show-sm">
-      <i class="fas fa-bars fa-2x"></i>
+    <nav class="navbar show-sm" id="navbtn">
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()"
+        ><i class="fas fa-bars"></i
+      ></span>
     </nav>
 
     <section class="landing">
@@ -39,7 +52,7 @@
         <h1 class="x-large"><span>EDUARDO</span> R RIBEIRO</h1>
         <h3 class="large">I'm a <span>Front-End</span> Developer!</h3>
         <h2 class="lead">Code // Style // Share</h2>
-        <a href="#servicos">
+        <a href="#sobre">
           <i class="fas fa-arrow-circle-down fa-3x" id="botaao"></i>
         </a>
       </section>
