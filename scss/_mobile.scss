@@ -1,0 +1,43 @@
+@media (max-width: 700px) {
+  .hide-sm {
+    display: none;
+  }
+
+  .show-sm {
+    color: white;
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .landing-inner {
+    h1 {
+      font-size: 2.5rem;
+      width: auto;
+    }
+  }
+
+  .sobre .container h1 {
+    font-size: 1.8rem;
+    width: 300px;
+  }
+
+  .minhas-skill .container h1 {
+    font-size: 1.8rem;
+    width: 300px;
+  }
+
+  .minhas-skill .container .teste {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem;
+  }
+
+  .projects h1 {
+    font-size: 1.8rem;
+    width: 300px;
+  }
+
+  .projects .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
