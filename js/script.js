@@ -38,6 +38,7 @@ tabItems.forEach(item => item.addEventListener('click', selectItem));
 // Script para mostrar o menu mobile
 function openNav() {
   document.getElementById('myNav').style.width = '100%';
+  document.getElementById('myNav').style.display = 'block';
   document.getElementById('navbtn').style.display = 'none';
 }
 
