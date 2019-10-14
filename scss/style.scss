@@ -111,6 +111,10 @@ img {
     text-align: center;
 
     h1 {
+      animation: slide;
+      animation-duration: 1.2s;
+      animation-fill-mode: backwards;
+      animation-timing-function: ease-in-out;
       span {
         color: $primary-color;
         font-weight: 600;
@@ -126,6 +130,9 @@ img {
     h3 {
       font-size: 2.3rem;
       margin-top: 2rem;
+      animation: slide2;
+      animation-duration: 1.2s;
+      animation-timing-function: ease-in-out;
       span {
         color: $primary-color;
       }
@@ -136,7 +143,42 @@ img {
       bottom: 0;
       margin-bottom: 2rem;
       color: white;
+      animation: nono;
+      animation-duration: 700ms;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
     }
+  }
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slide2 {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes nono {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  35% {
+    transform: translateY(-10%);
+  }
+  70% {
+    transform: translateY(10%);
   }
 }
 
