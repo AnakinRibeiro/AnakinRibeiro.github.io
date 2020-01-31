@@ -375,6 +375,10 @@ img {
             border: 1px solid $primary-color;
             color: #fff;
             transition: all 0.2s linear;
+
+            a {
+              color: #fff;
+            }
           }
 
           button:hover {
